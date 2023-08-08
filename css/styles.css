@@ -1,12 +1,16 @@
 /* styles.css */
-@import 'tailwindcss/base';
+/* @import 'tailwindcss/base';
 @import 'tailwindcss/components';
-@import 'tailwindcss/utilities';
+@import 'tailwindcss/utilities'; */
 
   /* Estilos para telas menores, como dispositivos móveis */
   
 /* Aqui você pode adicionar suas próprias regras CSS personalizadas */
 /* Exemplo: */
+
+header, footer, body, main, section, div, p, article, aside, form{
+  content-visibility: auto;
+}
 
 .normalText{
   font-size: 25px ;
@@ -143,11 +147,7 @@
   .gradient {
     background: linear-gradient(90deg, #1C1C1C 0%, #1C1C1C 100%);
   }
-  .fundo-imagem {
-    background-image: url("back2.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-  }
+
   .titulo {
     color: #f3e51a;
     font-size: 25px;

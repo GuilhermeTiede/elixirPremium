@@ -32,7 +32,7 @@
       </div>
     </nav>
     <section class="bg-white border-b py-8 gradient" >
-    <div class="pt-4 fundo-imagem">
+    <div class="pt-4">
       <div class="text-center">
         <img src="imgs/img2.webp" alt="" width="413" height="106" class="block m-auto lozad">
       </div>
@@ -855,5 +855,16 @@
   const observer = lozad(); // Inicializa o Lazy Load
   observer.observe();
 </script>
+
+<script>
+  // Carrega o arquivo CSS após a página ser carregada
+  window.addEventListener('load', function() {
+      var link = document.createElement('link');
+      link.rel = 'stylesheet';
+      link.href = '/css/tailwind.min.css';
+      document.head.appendChild(link);
+  });
+  </script>
+
   </body>
 </html>
